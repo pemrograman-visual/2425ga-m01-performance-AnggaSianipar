@@ -4,17 +4,17 @@
         <attribute name="name" value="M01"/>
         <attribute name="authors" value="juliu"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-10-18 11:04:43 AM"/>
+        <attribute name="saved" value="2024-10-18 11:10:01 AM"/>
         <attribute name="created" value="anVsaXU7S0FJU0FSOzIwMjMtMTAtMjc7MDM6MzA6MDUgUE07MjI2OA=="/>
         <attribute name="edited" value="anVsaXU7S0FJU0FSOzIwMjMtMTAtMjc7MDM6NDY6MjUgUE07MTsyMzg1"/>
-        <attribute name="edited" value="QW5nZ2EgQnJpbGx5YW50IFAgUztOQVdUSEE7MjAyNC0xMC0xODsxMTowNDo0MyBBTTs0OzM1MDQ="/>
+        <attribute name="edited" value="QW5nZ2EgQnJpbGx5YW50IFAgUztOQVdUSEE7MjAyNC0xMC0xODsxMToxMDowMSBBTTs1OzM0OTY="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <declare name="nilaihuruf, kredit" type="String" array="False" size=""/>
             <declare name="nilaiangka, result" type="Real" array="False" size=""/>
-            <do expression="kredit != &quot;---&quot;">
+            <do expression="kredit = &quot;---&quot;">
                 <input variable="kredit"/>
                 <if expression="kredit = &quot;---&quot;">
                     <then/>

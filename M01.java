@@ -48,7 +48,7 @@ public class M01 {
                 result = Integer.parseInt(kredit) * nilaiangka;
                 System.out.println(toFixed(result,1));
             }
-        } while (!kredit.equals("---"));
+        } while (kredit.equals("---"));
     }
     
     private static String toFixed(double value, int digits) {
