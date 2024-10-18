@@ -1,1 +1,3 @@
 kami sudah menyelesaikan UTS kami dengan baik
+kami memahami penggunaan looping do-while
+kami memahami penggunaan branching
