@@ -4,16 +4,16 @@
         <attribute name="name" value="M01"/>
         <attribute name="authors" value="juliu"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-10-18 11:01:36 AM"/>
+        <attribute name="saved" value="2024-10-18 11:04:43 AM"/>
         <attribute name="created" value="anVsaXU7S0FJU0FSOzIwMjMtMTAtMjc7MDM6MzA6MDUgUE07MjI2OA=="/>
         <attribute name="edited" value="anVsaXU7S0FJU0FSOzIwMjMtMTAtMjc7MDM6NDY6MjUgUE07MTsyMzg1"/>
-        <attribute name="edited" value="QW5nZ2EgQnJpbGx5YW50IFAgUztOQVdUSEE7MjAyNC0xMC0xODsxMTowMTozNiBBTTszOzM1MDI="/>
+        <attribute name="edited" value="QW5nZ2EgQnJpbGx5YW50IFAgUztOQVdUSEE7MjAyNC0xMC0xODsxMTowNDo0MyBBTTs0OzM1MDQ="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <declare name="nilaihuruf, kredit" type="String" array="False" size=""/>
-            <declare name="multiplier, result" type="Real" array="False" size=""/>
+            <declare name="nilaiangka, result" type="Real" array="False" size=""/>
             <do expression="kredit != &quot;---&quot;">
                 <input variable="kredit"/>
                 <if expression="kredit = &quot;---&quot;">
@@ -22,40 +22,40 @@
                         <input variable="nilaihuruf"/>
                         <if expression="nilaihuruf == &quot;A&quot;">
                             <then>
-                                <assign variable="multiplier" expression="4.0"/>
+                                <assign variable="nilaiangka" expression="4.0"/>
                             </then>
                             <else>
                                 <if expression="nilaihuruf == &quot;AB&quot;">
                                     <then>
-                                        <assign variable="multiplier" expression="3.5"/>
+                                        <assign variable="nilaiangka" expression="3.5"/>
                                     </then>
                                     <else>
                                         <if expression="nilaihuruf ==&quot;B&quot;">
                                             <then>
-                                                <assign variable="multiplier" expression="3.0"/>
+                                                <assign variable="nilaiangka" expression="3.0"/>
                                             </then>
                                             <else>
                                                 <if expression="nilaihuruf == &quot;BC&quot;">
                                                     <then>
-                                                        <assign variable="multiplier" expression="2.5"/>
+                                                        <assign variable="nilaiangka" expression="2.5"/>
                                                     </then>
                                                     <else>
                                                         <if expression="nilaihuruf == &quot;C&quot;">
                                                             <then>
-                                                                <assign variable="multiplier" expression="2.0"/>
+                                                                <assign variable="nilaiangka" expression="2.0"/>
                                                             </then>
                                                             <else>
                                                                 <if expression="nilaihuruf == &quot;D&quot;">
                                                                     <then>
-                                                                        <assign variable="multiplier" expression="1.0"/>
+                                                                        <assign variable="nilaiangka" expression="1.0"/>
                                                                     </then>
                                                                     <else>
                                                                         <if expression="nilaihuruf == &quot;E&quot;">
                                                                             <then>
-                                                                                <assign variable="multiplier" expression="0.0"/>
+                                                                                <assign variable="nilaiangka" expression="0.0"/>
                                                                             </then>
                                                                             <else>
-                                                                                <assign variable="multiplier" expression="0.0"/>
+                                                                                <assign variable="nilaiangka" expression="0.0"/>
                                                                             </else>
                                                                         </if>
                                                                     </else>
@@ -70,7 +70,7 @@
                                 </if>
                             </else>
                         </if>
-                        <assign variable="result" expression="ToReal(kredit) * multiplier"/>
+                        <assign variable="result" expression="ToInteger(kredit) * nilaiangka"/>
                         <output expression="ToFixed(result,1)" newline="True"/>
                     </else>
                 </if>

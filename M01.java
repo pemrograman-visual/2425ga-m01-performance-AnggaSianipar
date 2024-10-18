@@ -9,7 +9,7 @@ public class M01 {
 
     public static void main(String[] args) {
         String nilaihuruf, kredit;
-        double multiplier, result;
+        double nilaiangka, result;
 
         do {
             kredit = input.nextLine();
@@ -17,27 +17,27 @@ public class M01 {
             } else {
                 nilaihuruf = input.nextLine();
                 if (nilaihuruf.equals("A")) {
-                    multiplier = 4.0;
+                    nilaiangka = 4.0;
                 } else {
                     if (nilaihuruf.equals("AB")) {
-                        multiplier = 3.5;
+                        nilaiangka = 3.5;
                     } else {
                         if (nilaihuruf.equals("B")) {
-                            multiplier = 3.0;
+                            nilaiangka = 3.0;
                         } else {
                             if (nilaihuruf.equals("BC")) {
-                                multiplier = 2.5;
+                                nilaiangka = 2.5;
                             } else {
                                 if (nilaihuruf.equals("C")) {
-                                    multiplier = 2.0;
+                                    nilaiangka = 2.0;
                                 } else {
                                     if (nilaihuruf.equals("D")) {
-                                        multiplier = 1.0;
+                                        nilaiangka = 1.0;
                                     } else {
                                         if (nilaihuruf.equals("E")) {
-                                            multiplier = 0.0;
+                                            nilaiangka = 0.0;
                                         } else {
-                                            multiplier = 0.0;
+                                            nilaiangka = 0.0;
                                         }
                                     }
                                 }
@@ -45,7 +45,7 @@ public class M01 {
                         }
                     }
                 }
-                result = Integer.parseDouble(kredit) * multiplier;
+                result = Integer.parseInt(kredit) * nilaiangka;
                 System.out.println(toFixed(result,1));
             }
         } while (!kredit.equals("---"));
